@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head>
+
+<body class="h-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center py-2">REGISTER HERE</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <h6>NAME :</h6>
+                    <input type="text" class="w-100" placeholder="Enter Your Name" id="name">
+
+                    <h6 class="mt-2">EMAIL :</h6>
+                    <input type="email" class="w-100" placeholder="Enter Your Email" id="email">
+
+                    <h6 class="mt-2">PASSWORD :</h6>
+                    <input type="password" class="w-100" placeholder="Enter Password" id="pass">
+
+                    <button type="button" class="btn btn-info mt-2" onclick="createrow()">
+                    SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center py-2">DATA BASE</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>FIRSTNAME</th>
+                            <th>EMAIL</th>
+                            <th>PASSWORD</th>
+                            <th>UPDATE</th>
+                            <th>DELETE</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="createrow">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-main" id="main-display">
+    <div class="modal-inner">
+        <div class="modal-head">
+            
+            <i class="fas fa-times" onclick="removepopup()"></i>
+            
+        </div>
+        <div class="modal-section  justify-content-center py-3 ">
+           <div class="col-12">
+            <h4 class="text-center py-3 ">
+                SUCCESS
+            </h4>
+            </div>
+            <div class="col-12">
+            <h4 class="text-center">
+            <i class="fas fa-check-square "></i>
+            </h4>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-info" onclick="removepopup()">OK</button>
+            <button type="button" class="btn btn-info">CANCEL</button>
+        </div>
+    </div>
+</div>
+    <script src="js/script.js">
+    </script>
+</body>
+
+</html>

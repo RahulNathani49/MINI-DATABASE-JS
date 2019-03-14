@@ -1,0 +1,57 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+input{
+    outline: none;
+    color: gray;
+    font-weight: 400;
+    padding: 4px;
+}
+.modal-main{
+     height: 100%;
+    width: 100%;
+    background-color: rgba(1,1,1,.8);
+    position: fixed; 
+     display: none;
+    top: 0;
+}
+.modal-head{
+    position: relative;
+    
+}
+.modal-head i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 11;
+}
+.modal-inner{
+    overflow-x: hidden;
+    width: 500px;
+    overflow: auto;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate;
+    animation-duration: .5s;
+    transition: .5s;
+    
+
+}
+@keyframes animate{
+    0%{
+      top: 0;  
+    }
+    100%{
+        top: 50%;
+    }
+}
+.modal-section i{
+    color: darkgreen;
+    font-size: 60px;
+}
