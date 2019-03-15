@@ -18,7 +18,9 @@ input{
 td{
 text-align: center;
 }
-
+#logout{
+    display: none;
+}
 .modal-head{
     position: relative;
     
@@ -54,6 +56,45 @@ text-align: center;
     position: fixed; 
      display: none;
     top: 0;
+}
+#adminlogout{
+    display: none;
+}
+#delete-dialog{
+      height: 100%;
+    width: 100%;
+    background-color: rgba(1,1,1,.8);
+    position: fixed; 
+     display: none;
+    top: 0;
+}
+#open-entry{
+     height: 100%;
+    width: 100%;
+    background-color: rgba(1,1,1,.8);
+    position: fixed; 
+    display:none;
+    top: 0;
+}
+
+#admin-welcome{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(1,1,1,.8);
+    position: fixed; 
+    display:none;
+    top: 0;
+}
+#maindatabase{
+    display: none;
+}
+#admin-wrong{
+     height: 100%;
+    width: 100%;
+    background-color: rgba(1,1,1,.8);
+    position: fixed; 
+    display:none;
+    top: 0; 
 }
 @keyframes animate{
     0%{

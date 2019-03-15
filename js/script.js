@@ -76,3 +76,57 @@ document.getElementById("newemail").value="";
 document.getElementById("newpassword").value="";
 }
 
+function deleterow(){
+    document.getElementById("delete-dialog").style.display = "block"; 
+}
+function closedelete(){
+     document.getElementById("delete-dialog").style.display = "none";
+}
+
+function deletevalue(){
+   var x = document.getElementById("delete").parentNode.parentNode.parentNode; 
+   x.removeChild(x.childNodes[1]);   document.getElementById("delete-dialog").style.display = "none";
+
+}
+function closeadmin(){
+    document.getElementById("open-entry").style.display="none";
+}
+function openentry(){
+    document.getElementById("open-entry").style.display="block";
+}
+function removeadmin(){
+    document.getElementById("admin-welcome").style.display="none";
+}
+function noadmin(){
+       document.getElementById("admin-wrong").style.display = "none";
+}
+
+function checkadmin(){
+    var username = document.getElementById("username").value;
+    var adminpass = document.getElementById("adminpass").value;
+    
+    if(username === "rahuladmin" && adminpass === "21062002"){
+        document.getElementById("admin-welcome").style.display = "block";
+         document.getElementById("maindatabase").style.display = "block";
+        
+        document.getElementById("register").style.display = "none";
+         document.getElementById("adminlogin").style.display = "none";
+        document.getElementById("adminlogout").style.display = "block";
+    }
+    else{
+          document.getElementById("admin-wrong").style.display = "block";
+        
+    }
+       var username = document.getElementById("username").value="";
+    var adminpass = document.getElementById("adminpass").value="";
+    
+     document.getElementById("open-entry").style.display = "none";
+}
+function adminlogout(){
+    document.getElementById("maindatabase").style.display="none";
+     document.getElementById("register").style.display="block";
+    
+    document.getElementById("adminlogin").style.display="block";
+    
+    
+}
