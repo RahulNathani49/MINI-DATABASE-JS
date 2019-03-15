@@ -51,11 +51,11 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>FIRSTNAME</th>
-                            <th>EMAIL</th>
-                            <th>PASSWORD</th>
-                            <th>UPDATE</th>
-                            <th>DELETE</th>
+                            <th class="text-center">FIRSTNAME</th>
+                            <th class="text-center">EMAIL</th>
+                            <th class="text-center">PASSWORD</th>
+                            <th class="text-center">UPDATE</th>
+                            <th class="text-center">DELETE</th>
                         </tr>
                     </thead>
 
@@ -82,13 +82,47 @@
             </div>
             <div class="col-12">
             <h4 class="text-center">
-            <i class="fas fa-check-square "></i>
+            <i class="fas fa-check-square text-success"></i>
             </h4>
             </div>
             
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-info" onclick="removepopup()">OK</button>
+            <button type="button" class="btn btn-info">CANCEL</button>
+        </div>
+    </div>
+</div>
+   
+   
+   
+   
+   
+    <div id="update-dialog">
+    <div class="modal-inner">
+        <div class="modal-head">
+            
+            <i class="fas fa-times" onclick="removeupdate()"></i>
+            
+        </div>
+        <div class="modal-section  justify-content-center py-3 ">
+           <div class="col-12">
+            <h4 class="text-center py-3 ">
+                FILL UP
+            </h4>
+            </div>
+            <div class="col-12">
+            <h6 class="">NAME :</h6>
+            <input type="text" id="newname" placeholder="Password" class="w-100">
+            <h6 class="mt-2">EMAIL :</h6>
+            <input  type="email" id="newemail"placeholder="Email"class="w-100">
+            <h6 class="mt-2">PASSWORD :</h6>
+            <input  type="password" id="newpassword" placeholder="Password" class="w-100">
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-info" onclick="updatevalue()">UPDATE</button>
             <button type="button" class="btn btn-info">CANCEL</button>
         </div>
     </div>

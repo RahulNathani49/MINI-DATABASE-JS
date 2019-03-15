@@ -31,6 +31,11 @@ function createrow(){
     var child2 = tr.childNodes[1].innerHTML = register_email;
     
     var child3 = tr.childNodes[2].innerHTML = register_password;
+    
+    var child4 = tr.childNodes[3].innerHTML = '<button type="button" class="btn btn-success" onclick="update()" id="updatevalue"><i class="fas fa-edit" ></i></button>';
+    
+    var child5 = tr.childNodes[4].innerHTML = '<button type="button" class="btn btn-danger" id="delete" onclick="deleterow()"><i class="fas fa-trash-alt"></i></button>';
+   
 
     document.getElementById("name").value="";
      document.getElementById("email").value="";
@@ -40,3 +45,34 @@ function createrow(){
 function removepopup(){
      document.getElementById("main-display").style.display = "none";
 }
+function update(){
+    document.getElementById("update-dialog").style.display = "block";
+}
+function removeupdate(){
+     document.getElementById("update-dialog").style.display = "none";
+}
+function updatevalue(){
+    
+    var newchild1 = document.getElementById("newname").value;
+    
+    var newchild2 = document.getElementById("newemail").value;
+    
+    var newchild3 = document.getElementById("newpassword").value;
+    
+    var y = document.getElementById("updatevalue").parentNode.parentNode;
+    
+    var child1 = y.childNodes[0].innerHTML = newchild1;
+    
+    var child2 = y.childNodes[1].innerHTML = newchild2;
+    
+    var child3 = y.childNodes[2].innerHTML = newchild3;
+    
+    document.getElementById("update-dialog").style.display = "none";
+    
+document.getElementById("newname").value="";
+    
+document.getElementById("newemail").value="";
+    
+document.getElementById("newpassword").value="";
+}
+
