@@ -34,7 +34,7 @@ function createrow(){
     
     var child4 = tr.childNodes[3].innerHTML = '<button type="button" class="btn btn-success" onclick="update()" id="updatevalue"><i class="fas fa-edit" ></i></button>';
     
-    var child5 = tr.childNodes[4].innerHTML = '<button type="button" class="btn btn-danger" id="delete" onclick="deleterow()"><i class="fas fa-trash-alt"></i></button>';
+    var child5 = tr.childNodes[4].innerHTML = '<button type="button" class="btn btn-danger" onclick="deleterow(this)"><i class="fas fa-trash-alt"></i></button>';
    
 
     document.getElementById("name").value="";
@@ -76,18 +76,22 @@ document.getElementById("newemail").value="";
 document.getElementById("newpassword").value="";
 }
 
-function deleterow(){
-    document.getElementById("delete-dialog").style.display = "block"; 
+function deleterow(x){
+ 
+    y = x.parentNode.parentNode;
+    y.style.display="none";
+    
 }
 function closedelete(){
      document.getElementById("delete-dialog").style.display = "none";
 }
 
-function deletevalue(){
-   var x = document.getElementById("delete").parentNode.parentNode.parentNode; 
-   x.removeChild(x.childNodes[1]);   document.getElementById("delete-dialog").style.display = "none";
-
-}
+//function deletevalue(){
+//    var x = document.getElementById
+//    ("delete-dialog").parentNode;
+//    console.log(x);
+//    x.style.display="none";
+//}
 function closeadmin(){
     document.getElementById("open-entry").style.display="none";
 }
