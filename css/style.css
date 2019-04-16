@@ -50,11 +50,11 @@ text-align: center;
 
 }
 #update-dialog{
-      height: 100%;
+    height: 100%;
     width: 100%;
     background-color: rgba(1,1,1,.8);
     position: fixed; 
-     display: none;
+    display: none;
     top: 0;
 }
 #adminlogout{
@@ -86,7 +86,7 @@ text-align: center;
     top: 0;
 }
 #maindatabase{
-    display: none;
+/*    display: none;*/
 }
 #admin-wrong{
      height: 100%;

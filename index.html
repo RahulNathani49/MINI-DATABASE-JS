@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Title </title>
+    <title> G.P.A </title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -56,8 +56,8 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <table class="table table-striped">
-                    <thead>
+                <table class="table table-striped" id="createrow">
+                   
                         <tr>
                             <th class="text-center">FIRSTNAME</th>
                             <th class="text-center">EMAIL</th>
@@ -65,11 +65,8 @@
                             <th class="text-center">UPDATE</th>
                             <th class="text-center">DELETE</th>
                         </tr>
-                    </thead>
+                   
 
-                    <tbody id="createrow">
-                        
-                    </tbody>
                 </table>
             </div>
         </div>
@@ -123,14 +120,14 @@
             <h6 class="">NAME :</h6>
             <input type="text" id="newname" placeholder="Name :" class="w-100">
             <h6 class="mt-2">EMAIL :</h6>
-            <input  type="email" id="newemail"placeholder="Email"class="w-100">
+            <input  type="email" id="newemail" placeholder="Email"class="w-100">
             <h6 class="mt-2">PASSWORD :</h6>
             <input  type="password" id="newpassword" placeholder="Password" class="w-100">
             </div>
             
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-info" onclick="updatevalue()">UPDATE</button>
+            <button type="button" class="btn btn-info" onclick="updatenew()">UPDATE</button>
             <button type="button" class="btn btn-info">CANCEL</button>
         </div>
     </div>
@@ -257,14 +254,6 @@
         </div>
     </div>
 </div>
-   
-   
-   
-   
-   
-   
-   
-   
     <script src="js/script.js">
     </script>
 </body>
